@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: montserrat, roboto, sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: $mainBlack;
+    // display: grid;
+    // justify-items: center;
+}
+.container {
+    // width: 98vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+    &:hover {
+        color: $hoverBlack;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.mt {
+    margin-top: 5rem;
+}
+.mb {
+    margin-bottom: 5rem;
+}
+.mx {
+    margin-right: 4rem; 
+    margin-left: 4rem;
+}

@@ -1,0 +1,24 @@
+.icon-three {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15rem;
+    &__one {
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        &-image {
+            // align-self: center;
+            width: 8rem;
+            height: 8rem;
+            // background-color: $mainBlue;
+            background-image: radial-gradient($ctaBtn2, $ctaBtn1, $mainBlue);
+        }
+        &-content {
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-top: 2rem;
+
+        }
+    }
+}

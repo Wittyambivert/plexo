@@ -1,0 +1,31 @@
+.main-hero {
+    display: flex;
+
+
+    &__content {
+        align-self: center;
+        width: 45%;
+        margin-right: auto;
+        &-title {
+            font-size: 4rem;
+            color: $mainBlue;
+        }
+        &-subtitle {
+            font-size: 2.2rem;
+            font-weight: normal;
+            color: lighten($mainBlack, 30%);
+        }
+        &-cta {
+            @include ctaBtn;
+            width: 22.8rem;
+            height: 6.1rem;
+            border-radius: 5rem;
+            border: 0;
+            font-size: 1.5rem;
+            margin-top: 3rem;
+        }
+    }
+    &__image {
+        width: 40%;
+    }
+}
