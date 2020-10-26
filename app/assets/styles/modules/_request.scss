@@ -1,0 +1,26 @@
+.request {
+    margin-right: 10rem;
+    margin-left: 10rem;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    &-content {
+        // margin-right: auto;
+        &__title {
+            font-size: 3.6rem;
+            width: 30vw;
+            margin-bottom: 4.2rem;
+            .fa-arrow-right {
+                margin-left: 5rem;
+            }
+        }
+        &__img {
+            width: 70%;
+        }
+    }
+    &-form {
+        width: 40%;
+        // margin-right: 0;
+        // padding-right: 0;
+    }
+}
