@@ -13,6 +13,7 @@
 node_modules/
 app/assets/images/header-images/unused
 app/assets/images/interior/unused
+ppp
 .tmp/
 
 

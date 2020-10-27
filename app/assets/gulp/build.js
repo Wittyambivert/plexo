@@ -6,11 +6,11 @@ const rev = require("gulp-rev");
 const cssnano = require("gulp-cssnano");
 // const uglify = require("gulp-uglify"); this is for JS   
 
-gulp.task("deleteDocsFolder", function() {
+gulp.task("deleteDocsFolder", () => {
     return del("./docs");
 });
 
-gulp.task("optimizeImages", ["deleteDocsFolder"], function() {
+gulp.task("optimizeImages", ["deleteDocsFolder"], () => {
     return gulp.src("./app/assets/images/**/*")
         .pipe(imagemin({
             progressive: true,
@@ -20,13 +20,18 @@ gulp.task("optimizeImages", ["deleteDocsFolder"], function() {
         .pipe(gulp.dest("./docs/assets/images"));
 });
 
-gulp.task("usemin", ["deleteDocsFolder"], function() {
-    return gulp.src("./app/prod/index.html")
+gulp.task("usemin", ["deleteDocsFolder"], () => {
+    return gulp.src("./app/index.html")
         .pipe(usemin({
-            css: [function() {return rev()}, function() {return cssnano()}]
+            css: [() => {return rev()}, () => {return cssnano()}]
             // js: [function() {return rev()}, function() {return uglify()}]
         }))
         .pipe(gulp.dest("./docs"));
 });
 
-gulp.task("build", ["deleteDocsFolder", "optimizeImages", "usemin"]);
+gulp.task("copyWebfonts", ["deleteDocsFolder"], () => {
+    return gulp.src("./node_modules/@fortawesome/fontawesome-free/webfonts/*")
+        .pipe(gulp.dest("./docs/assets/webfonts"));
+});
+
+gulp.task("build", ["deleteDocsFolder", "optimizeImages", "usemin", "copyWebfonts"]);

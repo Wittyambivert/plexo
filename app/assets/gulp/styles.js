@@ -9,6 +9,5 @@ gulp.task("styles", ["icons"], () => {
         .pipe(sass())
         .on("error", sass.logError)
         .pipe(postcss([importCSS, autoprefixer]))
-        .pipe(gulp.dest("./docs/styles"))
         .pipe(gulp.dest("./app/prod/styles"))
 });
