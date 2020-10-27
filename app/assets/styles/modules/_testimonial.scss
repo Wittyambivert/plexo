@@ -1,0 +1,48 @@
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15rem 16.6rem;
+    margin-bottom: 0;
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-img {
+            width: 30%;
+            margin-right: 5rem;
+        }
+        &-text {
+            width: 50%;
+            font-size: 1.6rem;
+            &__top {
+                margin-bottom: 3rem;
+            }
+            &__bottom {
+                color: #048D75;
+            }
+        }
+    }
+    &__nav {
+        align-self: flex-end;
+        button {
+            width: 6rem;
+            height: 3rem;
+            border: 1px solid $btnGreen;
+            border-radius: 5rem;
+            font-size: 1.6rem;
+            background-color: transparent; 
+            margin-right: 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+    }
+}

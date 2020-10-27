@@ -1,0 +1,56 @@
+.property-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    &__title {
+        font-size: 1.6rem;
+        margin-bottom: 5rem;
+    }
+    &__steps {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        &-str {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25rem;
+            &__circle {
+                width: 6rem;
+                height: 6rem;
+                background-color: violet;
+                display: grid;
+                place-items: center;
+                border-radius: 50%;
+                font-size: 2rem;
+                color: white;
+                margin-bottom: 2rem;
+            }
+            &__sub {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+    }
+    &__form {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-btn {
+            width: 45rem;
+            height: 7rem;
+            border-radius: 5rem;
+            border: 0;
+            font-size: 1.5rem;
+            background-color: $btnGreen;
+            color: white;
+
+            .fa-arrow-right {
+                margin-left: 5rem;
+            }
+        }
+    }
+}

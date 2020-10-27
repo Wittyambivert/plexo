@@ -52,9 +52,12 @@ li {
     margin-right: 4rem; 
     margin-left: 4rem;
 }
-.f-input {
+.pt {
+    padding-top: 5rem;
+}
+.fm {
     width: 43.2rem - 4rem;
-    height: 5.1rem - 2.4rem;
+
     border: .2rem solid $mainBlack;
     border-radius: .5rem;
     padding: 1.4rem 3rem;
@@ -63,6 +66,18 @@ li {
     &:last-child {
         margin-bottom: 0;
     }
+    &-input {
+        height: 5.1rem - 2.4rem;
+    }
+    &-textarea {
+        height: 7rem;
+    }
+    
+}
+.footer-v {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .triangle {

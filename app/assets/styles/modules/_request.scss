@@ -22,5 +22,19 @@
         width: 40%;
         // margin-right: 0;
         // padding-right: 0;
+
+        &-btn {
+            width: 100%;
+            height: 7rem;
+            border-radius: 5rem;
+            border: .2rem solid $btnGreen;
+            font-size: 1.5rem;
+            background-color: transparent;
+            margin-top: 2rem;
+
+            .fa-arrow-right {
+                margin-left: 5rem;
+            }
+        }
     }
 }
