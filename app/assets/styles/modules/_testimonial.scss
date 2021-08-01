@@ -1,25 +1,102 @@
+// .testimonial {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin: 15rem 16.6rem 0;
+//     @media only screen and (max-width: 702px) {
+//         margin: 7rem;
+        
+//     }
+//     &__title {
+//         font-size: 1.8rem;
+//         margin-bottom: 5rem;
+//     }
+//     &__content {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+        
+
+//         &-img {
+//             width: 30%;
+//             margin-right: 5rem;
+//         }
+//         &-text {
+//             width: 50%;
+//             font-size: 1.6rem;
+//             &__top {
+//                 margin-bottom: 3rem;
+//             }
+//             &__bottom {
+//                 color: #048D75;
+//             }
+//         }
+//     }
+//     &__nav {
+//         align-self: flex-end;
+//         button {
+//             width: 6rem;
+//             height: 3rem;
+//             border: 1px solid $btnGreen;
+//             border-radius: 5rem;
+//             font-size: 1.6rem;
+//             background-color: transparent; 
+//             margin-right: 1rem;
+
+//             &:last-child {
+//                 margin-right: 0;
+//             }
+//         }
+        
+//     }
+// }
+
+
+
 .testimonial {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15rem 16.6rem;
-    margin-bottom: 0;
+    margin-top: 5rem;
+    @media only screen and (min-width: 769px) {
+        margin: 15rem 16.6rem 0;
+    }
+
     &__title {
-        font-size: 1.8rem;
-        margin-bottom: 5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+        @media only screen and (min-width: 769px) {
+            font-size: 1.8rem;
+            margin-bottom: 5rem;
+        }
     }
     &__content {
         display: flex;
         justify-content: center;
         align-items: center;
 
+        flex-direction: column;
+        
+        @media only screen and (min-width: 769px) {
+            flex-direction: row;
+        }
         &-img {
-            width: 30%;
-            margin-right: 5rem;
+            width: 50%;
+            @media only screen and (min-width: 769px) {
+                width: 30%;
+                margin-right: 5rem;
+            }
         }
         &-text {
-            width: 50%;
-            font-size: 1.6rem;
+            width: 90%;
+            font-size: 1.2rem;
+            text-align: center;
+            @media only screen and (min-width: 769px) {
+                width: 50%;
+                font-size: 1.6rem;
+                text-align: left;
+            }
             &__top {
                 margin-bottom: 3rem;
             }
@@ -29,7 +106,7 @@
         }
     }
     &__nav {
-        align-self: flex-end;
+        margin-top: 2rem;
         button {
             width: 6rem;
             height: 3rem;
@@ -38,6 +115,11 @@
             font-size: 1.6rem;
             background-color: transparent; 
             margin-right: 1rem;
+
+            &:hover {
+                background-color: $btnGreen;
+                color: white;
+            }
 
             &:last-child {
                 margin-right: 0;

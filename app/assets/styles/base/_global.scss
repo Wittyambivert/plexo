@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -12,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     color: $mainBlack;
+    width: 100vw;
     // display: grid;
     // justify-items: center;
 }
@@ -42,42 +44,69 @@ li {
     list-style-type: none;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
 .mt {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .mb {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 .mx {
-    margin-right: 4rem; 
-    margin-left: 4rem;
+    margin-right: 1rem; 
+    margin-left: 1rem;
 }
 .pt {
     padding-top: 5rem;
 }
 .fm {
-    width: 43.2rem - 4rem;
+    // width: 43.2rem - 4rem;
+
+    // border: .2rem solid $mainBlack;
+    // border-radius: .5rem;
+    // padding: 1.4rem 3rem;
+    // font-size: 1.5rem;
+    // margin-bottom: 1.5rem;
+    // &:last-child {
+    //     margin-bottom: 0;
+    // }
+    // &-input {
+    //     height: 5.1rem - 2.4rem;
+    // }
+    // &-textarea {
+    //     height: 7rem;
+    // }
 
     border: .2rem solid $mainBlack;
     border-radius: .5rem;
-    padding: 1.4rem 3rem;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    &:last-child {
-        margin-bottom: 0;
+    padding: 1.4rem 2rem;
+    margin-bottom: 1.2rem;
+    @media only screen and (min-width: 769px) {
+        padding: 1.4rem 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-input {
+            height: 5rem;
+        }
+        &-textarea {
+            height: 7rem;
+        }
     }
-    &-input {
-        height: 5.1rem - 2.4rem;
-    }
-    &-textarea {
-        height: 7rem;
-    }
+
     
 }
+.remove-for-m {
+    display: none;
+}
 .footer-v {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
 }
 
 .triangle {

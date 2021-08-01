@@ -1,43 +1,101 @@
+// .property-list {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     margin-top: 5rem;
+        
+//     &__title {
+//         font-size: 1.6rem;
+//         margin-bottom: 5rem;
+//     }
+//     &__steps {
+//         display: flex;
+//         justify-content: space-between;
+//         margin-bottom: 5rem;
+
+//         @media only screen and (max-width: 702px) {
+//             width: 60rem;
+//         }
+        
+//         &-str {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             width: 25rem;
+//             @media only screen and (max-width: 702px) {
+//                 width: 15rem;
+//             }
+//             &__circle {
+//                 width: 6rem;
+//                 height: 6rem;
+//                 background-color: violet;
+//                 display: grid;
+//                 place-items: center;
+//                 border-radius: 50%;
+//                 font-size: 2rem;
+//                 color: white;
+//                 margin-bottom: 2rem;
+//             }
+//             &__sub {
+//                 font-size: 1.6rem;
+//                 text-align: center;
+//                 @media only screen and (max-width: 702px) {
+//                     font-size: 1.2rem;
+//                 }
+//             }
+//         }
+//     }
+//     &__form {
+//         display: flex;
+//         flex-direction: column;
+//         flex-wrap: wrap;
+//         // justify-content: space-between;
+
+//         @media only screen and (max-width: 702px) {
+//             width: 100%;
+//             justify-content: center;
+//         }
+
+//         &-btn {
+//             width: 45rem;
+//             height: 7rem;
+//             border-radius: 5rem;
+//             border: 0;
+//             font-size: 1.5rem;
+//             background-color: $btnGreen;
+//             color: white;
+
+//             .fa-arrow-right {
+//                 margin-left: 5rem;
+//             }
+//         }
+//     }
+// }
+
 .property-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
+        
     &__title {
         font-size: 1.6rem;
         margin-bottom: 5rem;
     }
-    &__steps {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5rem;
-        &-str {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 25rem;
-            &__circle {
-                width: 6rem;
-                height: 6rem;
-                background-color: violet;
-                display: grid;
-                place-items: center;
-                border-radius: 50%;
-                font-size: 2rem;
-                color: white;
-                margin-bottom: 2rem;
-            }
-            &__sub {
-                font-size: 1.6rem;
-                text-align: center;
-            }
-        }
+        
+    &__title {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
     }
     &__form {
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: none;
+
+        @media only screen and (min-width: 769px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            // justify-content: space-between;
+        }
 
         &-btn {
             width: 45rem;
@@ -50,6 +108,69 @@
 
             .fa-arrow-right {
                 margin-left: 5rem;
+            }
+        }
+    }
+    &__steps {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+        @media only screen and (min-width: 769px) {
+            margin-bottom: 5rem;
+        }
+
+        &-str {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 10rem;
+            @media only screen and (min-width: 769px) {
+                width: 25rem;
+            }
+            
+            &__circle {
+                width: 4rem;
+                height: 4rem;
+                background-color: $mainBlue;
+                display: grid;
+                place-items: center;
+                border-radius: 50%;
+                font-size: 1.5rem;
+                color: white;
+                margin-bottom: 2rem;
+
+                @media only screen and (min-width: 769px) {
+                    width: 6rem;
+                    height: 6rem;
+                    font-size: 2rem;
+                }
+            }
+            &__sub {
+                font-size: 1.2rem;
+                text-align: center;
+                @media only screen and (min-width: 769px) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+    &__btn {
+        &-main {
+            width: 70vw;
+            height: 5rem;
+            border-radius: 5rem;
+            border: .2rem solid $btnGreen;
+            font-size: 1.5rem;
+            background-color: transparent;
+
+            @media only screen and (min-width: 769px) {
+                display: none;
+            }
+
+            &:hover {
+                background-color: $btnGreen;
+                color: white;
             }
         }
     }

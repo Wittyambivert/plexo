@@ -1,67 +1,228 @@
-.main-footer {
-    margin-top: 18.8rem;
-    padding: 5rem 20rem;
-    background-color: #f9f9f9;
-    // display: flex;
-    // justify-content: center;
+//.main-footer {
+//     margin-top: 10rem;
+//     padding: 5rem 20rem;
+//     background-color: #f9f9f9;
+//     @media only screen and (max-width: 702px) {
+//         margin-top: 8rem;
+//         padding: 5rem 3rem;
+//     }
     
-    font-size: 1.6rem;
+//     font-size: 1.6rem;
+//     &__content {
+//         display: flex;
+//         justify-content: space-between;
+//         // min-height: 20rem;
+//         height: 30rem;
+
+//         &-left {
+
+//         }
+//         &-center {
+//             &__title {
+//                 font-weight: bold;
+//             }
+//             &__body {
+//                 // color: $hoverBlack;
+//                 font-size: 1.5rem;
+//                 p {
+//                     margin-bottom: 2rem;
+//                 }
+//                 p:last-child {
+//                     margin-bottom: 0;
+//                 }
+//             }
+//         }
+//         &-right {
+//             &__title {
+//                 font-weight: bold;
+//             }
+//             &__body {
+//                 font-size: 1.5rem;
+//                 p {
+//                     margin-bottom: 2rem;
+//                 }
+//                 p:last-child {
+//                     margin-bottom: 0;
+//                 }
+//                 .fab {
+//                     margin-bottom: 4rem;
+//                     margin-right: 2rem;
+//                 }
+//                 .hiring-btn {
+//                     width: 13.2rem;
+//                     height: 3.7rem;
+//                     background-color: $btnGreen;
+//                     padding: 1rem 2rem;
+//                     color: white;
+//                     border-radius: 5rem;
+//                     border: .2rem solid $btnGreen;
+//                     &:hover {
+//                         background-color: transparent;
+//                         border: .2rem solid $btnGreen;
+//                         color: $btnGreen;
+//                     }
+//                 }
+//             }
+//         }
+        
+//     }
+// } 
+
+
+.main-footer {
+    margin-top: 8rem;
+    padding: 2rem 3rem;
+    background-color: #f9f9f9;
+    font-size: 1.2rem;
+    @media only screen and (min-width: 769px) {
+        margin-top: 5rem;
+        padding: 5rem 10rem;
+    }
+    @media only screen and (min-width: 769px) {
+        padding: 5rem 20rem;
+    }
+
     &__content {
         display: flex;
         justify-content: space-between;
-        // min-height: 20rem;
-        height: 30rem;
 
         &-left {
-
+            width: 6rem;
         }
         &-center {
-            &__title {
-                font-weight: bold;
+            margin-left: 3rem;
+            text-decoration: underline;
+            position: relative;
+            bottom: 3.2rem;
+            cursor: pointer;
+
+            @media only screen and (min-width: 481px) {
+                text-decoration: none;
             }
+
             &__body {
-                // color: $hoverBlack;
-                font-size: 1.5rem;
-                p {
-                    margin-bottom: 2rem;
+                display: none;
+                @media only screen and (min-width: 481px) {
+                    display: block;
+                    margin-top: 1rem;
+                    font-weight: 400;
+                    p {
+                        margin-bottom: .5rem;
+                    }
+                    p:last-child {
+                        margin-bottom: 0;
+                    }
                 }
-                p:last-child {
-                    margin-bottom: 0;
+            }
+            &__title {
+                @media only screen and (min-width: 481px) {
+                    font-size: 1.5rem;
+                    cursor: text;
                 }
             }
         }
         &-right {
-            &__title {
-                font-weight: bold;
+            margin-left: 3rem;
+            text-decoration: underline;
+            position: relative;
+            bottom: 3.2rem;
+            cursor: pointer;
+
+            @media only screen and (min-width: 481px) {
+                text-decoration: none;
             }
+
             &__body {
-                font-size: 1.5rem;
-                p {
-                    margin-bottom: 2rem;
-                }
-                p:last-child {
-                    margin-bottom: 0;
-                }
-                .fab {
-                    margin-bottom: 4rem;
-                    margin-right: 2rem;
-                }
-                .hiring-btn {
-                    width: 13.2rem;
-                    height: 3.7rem;
-                    background-color: $btnGreen;
-                    padding: 1rem 2rem;
-                    color: white;
-                    border-radius: 5rem;
-                    border: .2rem solid $btnGreen;
-                    &:hover {
-                        background-color: transparent;
+                display: none;
+                @media only screen and (min-width: 481px) {
+                    display: block;
+                    margin-top: 1rem;
+                    font-weight: 400;
+                    p {
+                        margin-bottom: .5rem;
+                    }
+                    p:last-child {
+                        margin-bottom: 0;
+                    }
+                    .fab {
+                        margin-right: 2rem;
+                    }
+                    .hiring-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 8rem;
+                        height: 2.5rem;
+                        background-color: $btnGreen;
+                        color: white;
+                        border-radius: 5rem;
                         border: .2rem solid $btnGreen;
-                        color: $btnGreen;
+                        &:hover {
+                            background-color: transparent;
+                            border: .2rem solid $btnGreen;
+                            color: $btnGreen;
+                        }
                     }
                 }
             }
+            &__title {
+                @media only screen and (min-width: 481px) {
+                    font-size: 1.5rem;
+                    cursor: text;
+                }
+            }
         }
-        
+
+        // &-center {
+        //     margin-left: 3rem;
+        //     &__title {
+        //         font-weight: bold;
+        //     }
+        //     &__body {
+        //         // color: $hoverBlack;
+        //         font-size: 1.5rem;
+        //         display: none;
+        //         p {
+        //             margin-bottom: 2rem;
+        //         }
+        //         p:last-child {
+        //             margin-bottom: 0;
+        //         }
+        //     }
+        // }
+        // &-right {
+        //     &__title {
+        //         font-weight: bold;
+        //     }
+        //     &__body {
+        //         display: none;
+        //         font-size: 1.5rem;
+        //         p {
+        //             margin-bottom: 2rem;
+        //         }
+        //         p:last-child {
+        //             margin-bottom: 0;
+        //         }
+        //         .fab {
+        //             margin-bottom: 4rem;
+        //             margin-right: 2rem;
+        //         }
+        //         .hiring-btn {
+        //             display: none;
+        //             width: 13.2rem;
+        //             height: 3.7rem;
+        //             background-color: $btnGreen;
+        //             padding: 1rem 2rem;
+        //             color: white;
+        //             border-radius: 5rem;
+        //             border: .2rem solid $btnGreen;
+        //             &:hover {
+        //                 background-color: transparent;
+        //                 border: .2rem solid $btnGreen;
+        //                 color: $btnGreen;
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
